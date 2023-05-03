@@ -6,15 +6,14 @@ $tertiary-color: #99e2d0;
 $grey: #eaeaea;
 $dark-grey: #353535;
 $light-grey: #f7f7f7;
+$middle-grey: #7e7e7e;
+$white: #ffffff;
 
 /*Mixin*/
+
 @mixin btn-gradiant {
   color: white;
-  background: linear-gradient(
-    193.33deg,
-    $primary-color -11.44%,
-    $secondy-color 123.93%
-  );
+  background: linear-gradient(180deg, $secondy-color 0%, $primary-color 100%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   height: 50px;
   border-radius: 25px;
@@ -23,13 +22,14 @@ $light-grey: #f7f7f7;
   border: none;
 }
 
-@mixin btn-step {
-}
-
 /*Général*/
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -110,5 +110,123 @@ body {
   &__steps {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0px 20px 68px 32.5px;
+    gap: 25px;
+  }
+
+  &__step {
+    border: 1px;
+    border-radius: 20px;
+    background-color: $light-grey;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 24px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    color: $middle-grey;
+    margin-right: 25px;
+  }
+
+  &__number {
+    background-color: $primary-color;
+    color: $white;
+    padding: 3px 8px 3px 8px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+}
+
+/*Restaurants*/
+
+.restaurants {
+  background-color: $light-grey;
+
+  &__title {
+    padding: 54px 80px 30px 20px;
+    margin: 0;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 66px 17px;
+    gap: 20px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &__image {
+    width: 100%;
+    height: 174px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+  }
+
+  &__block {
+    background-color: $white;
+    color: black;
+    height: 77px;
+    border-radius: 0 0 15px 15px;
+    padding: 16px 0 12px 13px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__city {
+    font-size: 17px;
+  }
+}
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-grey;
+  color: $white;
+  padding: 22px 0 16px 25px;
+  gap: 16px;
+
+  &__container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__link {
+    display: flex;
+    gap: 11px;
   }
 }
