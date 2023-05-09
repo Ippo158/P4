@@ -20,7 +20,16 @@ $white: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+@mixin btn-gradiant-hvr {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  opacity: 85%;
+}
+
+/*Keyframes*/
 
 /*Général*/
 
@@ -29,7 +38,10 @@ $white: #ffffff;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+  transition: none;
+  outline: none;
 }
 
 body {
@@ -38,6 +50,17 @@ body {
   width: 100%;
   max-width: 767px;
   font-family: "Roboto", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.fa-heart {
+  font-size: 30px;
+  position: absolute;
+  right: 25px;
 }
 
 /*Header*/
@@ -94,6 +117,10 @@ body {
     @include btn-gradiant;
     margin-top: 27px;
     width: 218px;
+
+    &:hover {
+      @include btn-gradiant-hvr;
+    }
   }
 }
 
@@ -199,11 +226,13 @@ body {
   &__block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: $white;
     color: black;
     height: 77px;
     border-radius: 0 0 15px 15px;
-    padding: 16px 0 12px 13px;
+    padding: 16px 25px 12px 13px;
+    position: relative;
   }
 
   &__info {
@@ -221,10 +250,16 @@ body {
     font-size: 17px;
   }
 
-  &__heart {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
+  &__heartfav {
+    color: transparent;
+    background: linear-gradient($primary-color, $secondy-color);
+    background-clip: text;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
