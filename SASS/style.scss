@@ -145,15 +145,15 @@ body {
     padding: 26px 0px 26px 34px;
     display: flex;
     align-items: center;
+
+    &:hover > i {
+      color: $primary-color;
+    }
   }
 
   &__icon {
     color: $middle-grey;
     margin-right: 25px;
-
-    &:hover {
-      color: $primary-color;
-    }
   }
 
   &__number {

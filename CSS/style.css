@@ -106,12 +106,12 @@ body {
   display: flex;
   align-items: center;
 }
+.process__step:hover > i {
+  color: #9356dc;
+}
 .process__icon {
   color: #7e7e7e;
   margin-right: 25px;
-}
-.process__icon:hover {
-  color: #9356dc;
 }
 .process__number {
   background-color: #9356dc;
