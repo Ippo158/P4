@@ -29,6 +29,14 @@ $white: #ffffff;
   opacity: 85%;
 }
 
+@mixin btn-fav {
+  color: transparent;
+  background: linear-gradient($primary-color, $secondy-color);
+  background-clip: text;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
 /*Keyframes*/
 
 /*Général*/
@@ -50,17 +58,6 @@ body {
   width: 100%;
   max-width: 767px;
   font-family: "Roboto", sans-serif;
-}
-
-.material-symbols-outlined {
-  font-size: 32px;
-  font-weight: 200;
-}
-
-.fa-heart {
-  font-size: 30px;
-  position: absolute;
-  right: 25px;
 }
 
 /*Header*/
@@ -127,8 +124,6 @@ body {
 /*Fonctionnement*/
 
 .process {
-  height: 440px;
-
   &__title {
     padding: 48px 80px 26px 20px;
     margin: 0;
@@ -140,7 +135,6 @@ body {
     margin: 0;
     padding: 0px 20px 68px 32.5px;
     gap: 25px;
-    position: relative;
   }
 
   &__step {
@@ -156,6 +150,10 @@ body {
   &__icon {
     color: $middle-grey;
     margin-right: 25px;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   &__number {
@@ -250,17 +248,19 @@ body {
     font-size: 17px;
   }
 
-  &__heartfav {
-    color: transparent;
-    background: linear-gradient($primary-color, $secondy-color);
-    background-clip: text;
-    opacity: 0;
-    transition: all 500ms ease-in-out;
+  &__fav {
+    @include btn-fav;
 
     &:hover {
       opacity: 1;
     }
   }
+}
+
+.fa-heart {
+  font-size: 25px;
+  position: absolute;
+  right: 35px;
 }
 
 /*Footer*/
@@ -270,7 +270,7 @@ body {
   flex-direction: column;
   background-color: $dark-grey;
   color: $white;
-  padding: 22px 0 16px 25px;
+  padding: 22px 25px 16px 25px;
   gap: 16px;
 
   &__container {
@@ -291,5 +291,106 @@ body {
   &__link {
     display: flex;
     gap: 11px;
+  }
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1024px;
+  }
+
+  .process {
+    padding: 50px 80px;
+
+    &__title {
+      padding: 0 0 25px 0;
+    }
+
+    &__step {
+      width: 100%;
+      position: relative;
+    }
+
+    &__steps {
+      flex-direction: row;
+      padding: 0;
+    }
+
+    &__number {
+      position: absolute;
+      left: -12px;
+    }
+  }
+
+  .restaurants {
+    padding: 0 80px;
+
+    &__title {
+      padding: 30px 0 28px 0;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 50px;
+      column-gap: 100px;
+      padding: 0 0 30px 0;
+    }
+  }
+
+  .footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 64px;
+    padding-right: 50px;
+
+    &__container {
+      flex-direction: row;
+      gap: 30px;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    max-width: 2560px;
+  }
+
+  .header {
+    height: 96px;
+
+    &__logo {
+      width: 200px;
+    }
+  }
+
+  .intro {
+    padding-bottom: 30px;
+
+    &__title {
+      font-size: 40px;
+      color: black;
+      padding: 30px 0 18px 0;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__button {
+      margin: 18px 0 0 0;
+    }
+  }
+
+  .process {
+    padding: 50px 180px;
+  }
+
+  .restaurants {
+    padding: 0 180px;
   }
 }
