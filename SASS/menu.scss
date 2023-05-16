@@ -236,12 +236,12 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          animation: slide-left 1s ease-in-out both;
+          animation: slide-left 0.5s ease-in-out both;
           transform-origin: right;
         }
 
         .menu__price {
-          animation: price-slide 1s ease-in-out both;
+          animation: price-slide 0.5s ease-in-out both;
         }
       }
     }
