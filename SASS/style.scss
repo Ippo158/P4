@@ -145,6 +145,7 @@ body {
     padding: 26px 0px 26px 34px;
     display: flex;
     align-items: center;
+    font-weight: bold;
 
     &:hover > i {
       color: $primary-color;
@@ -164,6 +165,7 @@ body {
     margin-right: 10px;
     position: absolute;
     left: 20px;
+    font-weight: 500;
   }
 }
 
