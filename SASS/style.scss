@@ -47,6 +47,7 @@ $white: #ffffff;
   99% {
     opacity: 0.9;
   }
+
   100% {
     opacity: 0;
     inset: 0;
@@ -72,7 +73,6 @@ body {
   width: 100%;
   max-width: 767px;
   font-family: "Roboto", sans-serif;
-  
 }
 
 /*Loader*/
@@ -91,18 +91,18 @@ body {
 }
 
 .progress {
-  width: 134.4px;
-  height: 24.6px;
-  border-radius: 22.4px;
+  width: 134px;
+  height: 24px;
+  border-radius: 22px;
   color: #9356dc;
-  border: 2.2px solid;
+  border: 3px solid;
   position: relative;
 }
 
 .progress::before {
   content: "";
   position: absolute;
-  margin: 2.2px;
+  margin: 2px;
   inset: 0 100% 0 0;
   border-radius: inherit;
   background: currentColor;
@@ -191,7 +191,7 @@ body {
     border-radius: 20px;
     background-color: $light-grey;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    padding: 26px 0px 26px 34px;
+    padding: 26px 10px 26px 34px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -281,7 +281,6 @@ body {
     height: 77px;
     border-radius: 0 0 15px 15px;
     padding: 16px 25px 12px 13px;
-    position: relative;
   }
 
   &__info {
@@ -299,6 +298,20 @@ body {
     font-size: 17px;
   }
 
+  &__heart-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__empty,
+  &__fav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+  }
+
   &__fav {
     @include btn-fav;
 
@@ -306,12 +319,6 @@ body {
       opacity: 1;
     }
   }
-}
-
-.fa-heart {
-  font-size: 25px;
-  position: absolute;
-  right: 35px;
 }
 
 /*Footer*/

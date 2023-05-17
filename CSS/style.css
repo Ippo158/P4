@@ -50,18 +50,18 @@ body {
 }
 
 .progress {
-  width: 134.4px;
-  height: 24.6px;
-  border-radius: 22.4px;
+  width: 134px;
+  height: 24px;
+  border-radius: 22px;
   color: #9356dc;
-  border: 2.2px solid;
+  border: 3px solid;
   position: relative;
 }
 
 .progress::before {
   content: "";
   position: absolute;
-  margin: 2.2px;
+  margin: 2px;
   inset: 0 100% 0 0;
   border-radius: inherit;
   background: currentColor;
@@ -148,7 +148,7 @@ body {
   border-radius: 20px;
   background-color: #f7f7f7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  padding: 26px 0px 26px 34px;
+  padding: 26px 10px 26px 34px;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -228,7 +228,6 @@ body {
   height: 77px;
   border-radius: 0 0 15px 15px;
   padding: 16px 25px 12px 13px;
-  position: relative;
 }
 .restaurants__info {
   display: flex;
@@ -242,6 +241,17 @@ body {
 .restaurants__city {
   font-size: 17px;
 }
+.restaurants__heart-icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.restaurants__empty, .restaurants__fav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 25px;
+}
 .restaurants__fav {
   color: transparent;
   background: linear-gradient(#9356dc, #ff79da);
@@ -252,12 +262,6 @@ body {
 }
 .restaurants__fav:hover {
   opacity: 1;
-}
-
-.fa-heart {
-  font-size: 25px;
-  position: absolute;
-  right: 35px;
 }
 
 /*Footer*/
