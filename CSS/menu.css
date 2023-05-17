@@ -31,7 +31,7 @@
 }
 @keyframes price-slide {
   0% {
-    transform: translateX(60px);
+    transform: translateX(59px);
   }
   100% {
     transform: translateX(0px);
@@ -176,6 +176,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
   padding: 0px;
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
