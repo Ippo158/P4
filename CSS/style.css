@@ -4,10 +4,10 @@
 /*Keyframes*/
 @keyframes loader {
   0% {
-    opacity: 0.9;
+    opacity: 1;
   }
-  99% {
-    opacity: 0.9;
+  90% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -44,6 +44,7 @@ body {
   opacity: 0.9;
   pointer-events: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: loader 3s forwards;
@@ -111,6 +112,7 @@ body {
 .intro__subtitle {
   width: 84%;
   margin: 0;
+  font-size: 18px;
 }
 .intro__button {
   color: white;
@@ -246,6 +248,9 @@ body {
   width: 25px;
   height: 25px;
 }
+.restaurants__heart-icon:hover > .restaurants__empty {
+  display: none;
+}
 .restaurants__empty, .restaurants__fav {
   position: absolute;
   top: 0;
@@ -258,7 +263,7 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 0;
-  transition: all 500ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 .restaurants__fav:hover {
   opacity: 1;
