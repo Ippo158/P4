@@ -72,6 +72,7 @@ body {
   width: 100%;
   max-width: 767px;
   font-family: "Roboto", sans-serif;
+  
 }
 
 /*Loader*/
@@ -341,6 +342,7 @@ body {
   &__link {
     display: flex;
     gap: 11px;
+    cursor: pointer;
   }
 }
 
