@@ -43,11 +43,11 @@ $white: #ffffff;
   align-items: center;
 }
 
-@mixin overflow {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+// @mixin overflow {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
 
 /*Keyframes*/
 
