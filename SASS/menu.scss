@@ -43,11 +43,11 @@ $white: #ffffff;
   align-items: center;
 }
 
-// @mixin overflow {
-//   white-space: nowrap;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
+@mixin overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /*Keyframes*/
 
@@ -254,7 +254,6 @@ body {
           @include flex-center;
           animation: slide-left 0.5s ease-in-out both;
           transform-origin: right;
-          
         }
 
         .menu__price {
@@ -279,20 +278,24 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 15px;
+    @include overflow;   
   }
 
   &__name {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    @include overflow;
+     
     &__title {
       font-size: 18px;
       font-weight: 700;
+      @include overflow;
     }
 
     &__subtitle {
       font-size: 15px;
+      @include overflow;
     }
   }
 
