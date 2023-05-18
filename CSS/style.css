@@ -317,6 +317,7 @@ body {
   .process__steps {
     flex-direction: row;
     padding: 0;
+    gap: 37px;
   }
   .process__number {
     position: absolute;
