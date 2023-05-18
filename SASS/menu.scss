@@ -61,33 +61,15 @@ $white: #ffffff;
 }
 
 #menu-1 {
-  animation-delay: 0.2s;
+  animation-delay: 500ms;
 }
 
 #menu-2 {
-  animation-delay: 0.5s;
+  animation-delay: 1000ms;
 }
 
 #menu-3 {
-  animation-delay: 1s;
-}
-
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(59px);
-  }
-}
-
-@keyframes price-slide {
-  0% {
-    transform: translateX(59px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  animation-delay: 1500ms;
 }
 
 /*Général*/
@@ -250,25 +232,29 @@ body {
 
       &:hover {
         .menu__validation {
-          @include flex-center;
-          animation: slide-left 0.5s ease-in-out both;
-          transform-origin: right;
+          width: 59px;
         }
 
-        .menu__price {
-          animation: price-slide 0.5s ease-in-out both;
+        .fa-check-circle {
+          opacity: 1;
         }
       }
     }
   }
 
   &__validation {
-    display: none;
     background: $tertiary-color;
     color: $white;
     border-radius: 0 15px 15px 0;
-    padding: 0 20px;
+    @include flex-center;
+    width: 0;
     height: 100%;
+    transition: width 500ms ease-in-out;
+  }
+
+  .fa-check-circle {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
   }
 
   &__text {
@@ -302,6 +288,7 @@ body {
   &__price {
     font-weight: 700;
     font-size: 18px;
+    transition: transform 1s;
   }
 
   &__button {

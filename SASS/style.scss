@@ -57,6 +57,7 @@ $white: #ffffff;
   100% {
     opacity: 0;
     inset: 0;
+    visibility: hidden;
   }
 }
 
@@ -88,10 +89,9 @@ body {
   background-color: #ffffff;
   inset: 0;
   z-index: 1;
-  pointer-events: none;
   @include flex-center;
   flex-direction: column;
-  animation: loader 3s ease forwards;
+  animation: loader 3s ease both;
 }
 
 .progress {

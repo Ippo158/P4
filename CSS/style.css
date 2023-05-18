@@ -12,6 +12,7 @@
   100% {
     opacity: 0;
     inset: 0;
+    visibility: hidden;
   }
 }
 /*Général*/
@@ -40,12 +41,11 @@ body {
   background-color: #ffffff;
   inset: 0;
   z-index: 1;
-  pointer-events: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: loader 3s ease forwards;
+  animation: loader 3s ease both;
 }
 
 .progress {
