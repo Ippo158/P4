@@ -1,5 +1,7 @@
 <h1>Projet OhMyFood - Site Web de Commandes de Plats en Restaurants</h1>
 <h2>Projet numéro 4 de ma formation Intégrateur Web chez OpenClassrooms</h2>
+=======
+
 
 <h2>Description</h2>
 <p>OhMyFood est un site web de commandes de plats en restaurants. Le projet consiste à concevoir et développer une interface utilisateur attrayante et conviviale permettant aux utilisateurs de découvrir des restaurants, consulter leurs menus et passer des commandes en ligne. L'objectif est de créer une expérience utilisateur agréable et intuitive tout en mettant en valeur les différents plats proposés par les restaurants partenaires.</p>
@@ -19,5 +21,3 @@
     <li>Possibilité de composer et personnaliser sa commande en ajoutant des plats au panier</li>
     <li>Animation des éléments de l'interface pour une expérience utilisateur fluide et dynamique</li>
 </ul>
-
-
