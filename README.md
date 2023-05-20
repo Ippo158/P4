@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>OhMyFood - Site Web de Commandes de Plats en Restaurants</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
 
-            h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin-bottom: 10px;
-    }
-
-    ul {
-        margin-bottom: 10px;
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 5px;
-    }
-
-</style>
-
-</head>
-<body>
     <h1>Projet OhMyFood - Site Web de Commandes de Plats en Restaurants</h1>
     <h2>Projet numéro 4 de ma formation Intégrateur Web chez OpenClassrooms</h2>
 
@@ -57,6 +20,3 @@
     <li>Possibilité de composer et personnaliser sa commande en ajoutant des plats au panier</li>
     <li>Animation des éléments de l'interface pour une expérience utilisateur fluide et dynamique</li>
 </ul>
-
-</body>
-</html>
