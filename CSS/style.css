@@ -1,7 +1,12 @@
-@charset "UTF-8";
-/*Variables*/
-/*Mixin*/
-/*Keyframes*/
+/************************************
+*            VARIABLES              *
+************************************/
+/************************************
+*               MIXIN               *
+************************************/
+/************************************
+*            KEYFRAMES              *
+************************************/
 @keyframes loader {
   0% {
     opacity: 1;
@@ -15,7 +20,9 @@
     visibility: hidden;
   }
 }
-/*Général*/
+/************************************
+*             GENERAL               *
+************************************/
 * {
   box-sizing: border-box;
 }
@@ -35,7 +42,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*Loader*/
+/************************************
+*              LOADER               *
+************************************/
 .loader {
   position: fixed;
   background-color: #ffffff;
@@ -67,7 +76,9 @@ body {
   animation: loader 3s infinite;
 }
 
-/*Header*/
+/************************************
+*              HEADER               *
+************************************/
 .header {
   display: flex;
   justify-content: center;
@@ -82,7 +93,9 @@ body {
   width: 162px;
 }
 
-/*Intro*/
+/************************************
+*               INTRO               *
+************************************/
 .intro {
   display: flex;
   justify-content: center;
@@ -114,7 +127,7 @@ body {
   font-size: 18px;
 }
 .intro__button {
-  color: white;
+  color: #ffffff;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   height: 50px;
@@ -135,7 +148,9 @@ body {
   opacity: 85%;
 }
 
-/*Fonctionnement*/
+/************************************
+*          FONCTIONNEMENT           *
+************************************/
 .process__title {
   padding: 48px 80px 26px 20px;
   margin: 0;
@@ -175,7 +190,9 @@ body {
   font-weight: 500;
 }
 
-/*Restaurants*/
+/************************************
+*           RESTAURANTS             *
+************************************/
 .restaurants {
   background-color: #f7f7f7;
 }
@@ -228,7 +245,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  color: black;
+  color: #000000;
   height: 77px;
   border-radius: 0 0 15px 15px;
   padding: 16px 25px 12px 13px;
@@ -271,7 +288,9 @@ body {
   opacity: 1;
 }
 
-/*Footer*/
+/************************************
+*              FOOTER               *
+************************************/
 .footer {
   display: flex;
   flex-direction: column;
@@ -299,7 +318,9 @@ body {
   cursor: pointer;
 }
 
-/*Media Queries*/
+/************************************
+*           MEDIA QUERIES           *
+************************************/
 @media screen and (min-width: 768px) {
   body {
     max-width: 1024px;
@@ -365,7 +386,7 @@ body {
   }
   .intro__title {
     font-size: 40px;
-    color: black;
+    color: #000000;
     padding: 30px 0 18px 0;
   }
   .intro__subtitle {

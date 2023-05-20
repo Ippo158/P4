@@ -1,4 +1,6 @@
-/*Variables*/
+/************************************
+*            VARIABLES              *
+************************************/
 
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
@@ -8,8 +10,12 @@ $dark-grey: #353535;
 $light-grey: #f7f7f7;
 $middle-grey: #7e7e7e;
 $white: #ffffff;
+$green: #008766;
+$black: #000000;
 
-/*Mixin*/
+/************************************
+*               MIXIN               *
+************************************/
 
 @mixin btn-gradiant {
   color: $white;
@@ -49,7 +55,9 @@ $white: #ffffff;
   text-overflow: ellipsis;
 }
 
-/*Keyframes*/
+/************************************
+*            KEYFRAMES              *
+************************************/
 
 @keyframes opacity {
   0% {
@@ -72,7 +80,9 @@ $white: #ffffff;
   animation-delay: 1500ms;
 }
 
-/*Général*/
+/************************************
+*             GENERAL               *
+************************************/
 
 * {
   box-sizing: border-box;
@@ -101,7 +111,9 @@ body {
   position: fixed;
 }
 
-/*Header*/
+/************************************
+*              HEADER               *
+************************************/
 
 .header {
   @include flex-center;
@@ -130,7 +142,9 @@ body {
   object-fit: cover;
 }
 
-/*Menu*/
+/************************************
+*              MENU                 *
+************************************/
 
 .menu {
   @include flex-center;
@@ -303,7 +317,9 @@ body {
   }
 }
 
-/*Footer*/
+/************************************
+*              FOOTER               *
+************************************/
 
 .footer {
   display: flex;
@@ -334,6 +350,10 @@ body {
     cursor: pointer;
   }
 }
+
+/************************************
+*           MEDIA QUERIES           *
+************************************/
 
 @media screen and (min-width: 768px) {
   body {

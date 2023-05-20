@@ -1,7 +1,12 @@
-@charset "UTF-8";
-/*Variables*/
-/*Mixin*/
-/*Keyframes*/
+/************************************
+*            VARIABLES              *
+************************************/
+/************************************
+*               MIXIN               *
+************************************/
+/************************************
+*            KEYFRAMES              *
+************************************/
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -22,7 +27,9 @@
   animation-delay: 1500ms;
 }
 
-/*Général*/
+/************************************
+*             GENERAL               *
+************************************/
 * {
   box-sizing: border-box;
 }
@@ -50,7 +57,9 @@ body {
   position: fixed;
 }
 
-/*Header*/
+/************************************
+*              HEADER               *
+************************************/
 .header {
   display: flex;
   justify-content: center;
@@ -81,7 +90,9 @@ body {
      object-fit: cover;
 }
 
-/*Menu*/
+/************************************
+*              MENU                 *
+************************************/
 .menu {
   display: flex;
   justify-content: center;
@@ -259,7 +270,9 @@ body {
   opacity: 85%;
 }
 
-/*Footer*/
+/************************************
+*              FOOTER               *
+************************************/
 .footer {
   display: flex;
   flex-direction: column;
@@ -287,6 +300,9 @@ body {
   cursor: pointer;
 }
 
+/************************************
+*           MEDIA QUERIES           *
+************************************/
 @media screen and (min-width: 768px) {
   body {
     max-width: 2560px;
